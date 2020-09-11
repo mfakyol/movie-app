@@ -1,0 +1,89 @@
+.card {
+    width: 15%;
+    background-color: #e0e0e0;
+    display: inline-block;
+    margin:10px auto;
+    position: relative;
+    border-radius: 5px;
+}
+.card .card-image img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card .card-header {
+    text-align: center;
+}
+
+.card .card-upper-bar {    
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 0;
+    padding: 2px;
+    background-color: rgba(14, 136, 184, 0.5);
+    transition: opacity .5s ease;
+    opacity: 0;
+}
+.card .card-lower-bar {    
+    width: 100%;
+    color: white;
+    position: absolute;
+    bottom: 28px;
+    padding: 2px;
+    background-color: rgba(14, 136, 184, 0.5);
+    transition: opacity .5s ease;
+    opacity: 0;
+}
+
+
+.card:hover .card-upper-bar {
+    opacity: 1;
+}
+
+.card:hover .card-lower-bar {
+    opacity: 1;
+}
+
+.card .card-imdb {
+float: left;
+margin-left: 10px;
+}
+.card .card-rotten {
+ float: right;
+ margin-right: 10px;
+}
+
+
+@media screen and (max-width: 1400px){
+    .card {
+        width: 22%;
+        margin: 10px auto;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+    .card {
+        margin: 10px auto;
+        width: 32%;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .card {
+        width:46%;
+        margin: 10px auto;
+    }
+
+}
+@media screen and (max-width: 500px){
+    .card {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+}

@@ -1,0 +1,52 @@
+.movie-detail-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.movie-poster {
+    width: 48%;
+}
+.movie-poster img {
+    width: 100%;
+    float: left;
+}
+
+.movie-detail {
+    width: 48%;
+    float: right;
+}
+
+.movie-detail .movie-name {
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+.movie-detail hr {
+    margin-bottom: 15px;
+}
+
+.movie-detail .movie-info {
+    padding-top: 5px;
+}
+.movie-detail .movie-info b {
+    color: #b0b0b0;
+}
+
+@media screen and (max-width:825px){
+    .movie-poster {
+        width: 100%;
+        float: none;
+    }
+
+    .movie-detail {
+        width:100%;
+        float: none;
+    }
+    
+    .movie-detail-container {
+        padding: 30px;
+    }
+}

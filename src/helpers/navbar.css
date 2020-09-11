@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e0e0e0;
+  position: sticky;  
+  top: 0;
+  z-index: 10;
+}
+
+header li,
+header a,
+header button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+}
+
+.nav {
+  margin: 0 auto;
+  max-width: 1040px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  transition: all 1s;
+  max-height: 80px;
+}
+
+.logo a{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 22px;
+  transition: all 0.3s ease 0s;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.logo:hover {
+  color: #0088a9;
+}
+.nav_links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #0088a9;
+}
+
+.search {
+    padding-left: 20px;
+}
+header button {
+  margin-left: 10px;
+  border-radius: 25px;
+  padding: 5px 10px;
+  background-color: rgba(0, 136, 169, 1);
+  color: #edf0f1;
+  border: none;
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+
+header button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+header input {
+  border-radius: 10px;
+  height: 29px;
+  border: 1px #b0b0b0 solid;
+  text-indent: 10px;
+}
+
+header input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 825px) {
+
+  .logo {
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  .nav {
+    max-height: 73px;
+      display: block;
+      transition: max-height .3s cubic-bezier(0, 0, 1, 1);
+      overflow: hidden;
+      padding: 10px 10px;
+  }
+
+
+  .nav-links li {
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-links  {
+      margin-top: 20px;
+
+  }
+
+
+  header li,
+  header a {
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  .burger-menu {
+      display: block;
+      float: right;
+      transition: all .3s;
+  }
+
+  .burger-menu:active {
+      width: 50px;
+       transform: rotate(5deg);
+  
+  }
+}
+
